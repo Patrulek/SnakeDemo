@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ServerWindow</class>
+ <widget class="QMainWindow" name="ServerWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>220</width>
+    <height>160</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>220</width>
+    <height>160</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>220</width>
+    <height>160</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>ServerWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_start_server">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>67</y>
+      <width>150</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start server</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_stop_server">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>100</y>
+      <width>150</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Stop server</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="le_port">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>12</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>150</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>150</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="placeholderText">
+     <string>Port (1024-65535)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lab_server_status">
+    <property name="geometry">
+     <rect>
+      <x>38</x>
+      <y>38</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Down</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lab_players">
+    <property name="geometry">
+     <rect>
+      <x>38</x>
+      <y>130</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Players: 0</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>le_port</tabstop>
+  <tabstop>btn_start_server</tabstop>
+  <tabstop>btn_stop_server</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

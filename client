@@ -1,0 +1,13 @@
+#include "ClientJoinWindow.h"
+
+ClientJoinWindow::ClientJoinWindow(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::ClientJoinWindow)
+{
+    ui->setupUi(this);
+}
+
+ClientJoinWindow::~ClientJoinWindow()
+{
+    delete ui;
+}
